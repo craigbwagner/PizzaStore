@@ -10,6 +10,6 @@ public record Pizza
 
 public class PizzaDb : DbContext
 {
-  public PizzaDB(DbContextOptions options) : base(options) { }
+  public PizzaDb(DbContextOptions options) : base(options) { }
   public DbSet<Pizza> Pizzas { get; set; } = null!;
 }
